@@ -4,7 +4,7 @@ A full-stack HRMS application designed to manage employee records, attendance, a
 🚀 Live Links
 Web Application: [https://hrms-lite-damanpreet.netlify.app/]
 
-API Documentation: [https://hrms-lite-production-6de0.up.railway.app/]/docs
+API Documentation: [https://hrms-lite-production-6de0.up.railway.app/docs]
 
 🛠 Tech Stack
 Frontend: React.js, Vite, TailwindCSS
