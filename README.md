@@ -2,9 +2,9 @@ HRMS Lite - Human Resource Management System
 A full-stack HRMS application designed to manage employee records, attendance, and leave requests efficiently.
 
 🚀 Live Links
-Web Application: [Paste your Netlify URL here]
+Web Application: [https://hrms-lite-damanpreet.netlify.app/]
 
-API Documentation: [Paste your Railway Backend URL here]/docs
+API Documentation: [https://hrms-lite-production-6de0.up.railway.app/]/docs
 
 🛠 Tech Stack
 Frontend: React.js, Vite, TailwindCSS
