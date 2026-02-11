@@ -1,13 +1,26 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://localhost:8000';
+// Use environment variable or fallback to localhost:8000 (matching your backend port)
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000';
 
 const api = axios.create({
-    baseURL: API_BASE_URL,
+    baseURL: API_URL,
     headers: {
         'Content-Type': 'application/json',
     },
 });
+
+// Request interceptor to add Authorization header
+api.interceptors.request.use(
+    (config) => {
+        const token = localStorage.getItem('token');
+        if (token) {
+            config.headers.Authorization = `Bearer ${token}`;
+        }
+        return config;
+    },
+    (error) => Promise.reject(error)
+);
 
 // Employee API calls
 export const employeeAPI = {
